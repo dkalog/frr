@@ -84,6 +84,10 @@ an example)
     sudo chown frr:frrvty /usr/local/etc/frr/vtysh.conf
     sudo chmod 640 /usr/local/etc/frr/*.conf
 
+### Create empty  run directory
+     sudo mkdir /var/run/frr
+     sudo chown -R frr:frr /var/run/frr
+
 ### Enable IP & IPv6 forwarding
 
 Add the following lines to the end of `/etc/sysctl.conf`:
